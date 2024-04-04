@@ -1,0 +1,22 @@
+
+name: "Qubic.Solutions Miner"
+description: "Mine Qubic coins on Qubic-Solutions pool in Home Assistant"
+version: "1.0.0"
+slug: "ruiner"
+init: false
+arch:
+  - armv7
+
+apparmor: true
+backup: hot
+tmpfs: true
+stage: deprecated
+
+options:
+  wallet_id: "Wallet-Id"
+  label: "HomeAssistant"
+  threads: "1"
+schema:
+  wallet_id: str
+  label: str
+  threads: int
